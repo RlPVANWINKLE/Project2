@@ -18,7 +18,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #9926f0;
+  --bs-primary: #ff0000da;
   --bs-secondary: #d122e3;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -28,7 +28,7 @@
   --bs-dark: #6c757d;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(to right, #9926f0 40%, #d122e3);
+  --bs-gradient: linear-gradient(to left, #ff0000da 50%, #343a40);
 }
 
 *,
