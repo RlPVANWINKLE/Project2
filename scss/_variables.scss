@@ -238,6 +238,7 @@ $variable-prefix:             bs- !default;
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
 $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+$gradient2: linear-gradient(180deg, rgba($white, .15), rgba($white, 0));
 // scss-docs-end variable-gradient
 
 // Spacing
