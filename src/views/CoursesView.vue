@@ -1,17 +1,16 @@
 <template>
     <ModalDef @close="toggleModal(); reqshow=false ; courseshow=false; desshow=true" :modalActive="modalActive">
         <div class="modal-content">
-            <h1 >{{header}}</h1>
-            <div>
+            <h1 class="moheader">{{header}}</h1>
+            <div class="h2_row">
                 <h2 @click="desshow = !desshow; courseshow=false;reqshow=false">Description</h2>
-                <p v-show="desshow">{{description}}</p>
-            </div>
-            <div>
                 <h2 @click="reqshow = !reqshow; courseshow=false; desshow=false">Requirements/supplies</h2>
-                <p v-show="reqshow">hello world</p>
-            </div>
-            <div>
                 <h2 @click="courseshow = !courseshow; desshow=false;reqshow=false ">Course Overview</h2>
+                
+            </div>
+            <div class="con_col">
+                <p v-show="desshow">{{description}}</p>                
+                <p v-show="reqshow">hello world</p>
                 <p v-show="courseshow">HELLOWORLD</p>
             </div>
             
@@ -122,4 +121,35 @@ export default {
     display: flex;
     flex-direction: column;  
 }
+.h2_row{
+    display: flex;
+    width: 100%;
+    margin: 0% auto; 
+}
+h2{
+    margin: 2% auto 0%;
+    color: white;
+    background-color: rgb(123, 123, 123);
+    padding: 3%;
+    border-bottom: 2px solid black;
+}
+h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.con_col{
+    display: flex;
+    background-color: rgb(123, 123, 123);
+    margin: 2% auto;
+    padding: 3%;
+    
+}
+.con_col p{
+    color: white;
+    width: 80%;
+}
+.moheader{
+    background-color: none;
+}
+
 </style>

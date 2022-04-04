@@ -43,7 +43,7 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 1% 5%;
-  margin: 0px 10px;
+  margin: 0% 1%;
 }
 
  nav a:hover{
@@ -56,7 +56,7 @@ nav a {
   width: 100%;
    display: flex;
    background-color: rgb(61, 61, 61);
-   height: 30vh;
+   height: 40vh;
    
    
  }
