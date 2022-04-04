@@ -1,0 +1,125 @@
+<template>
+    <ModalDef @close="toggleModal(); reqshow=false ; courseshow=false; desshow=true" :modalActive="modalActive">
+        <div class="modal-content">
+            <h1 >{{header}}</h1>
+            <div>
+                <h2 @click="desshow = !desshow; courseshow=false;reqshow=false">Description</h2>
+                <p v-show="desshow">{{description}}</p>
+            </div>
+            <div>
+                <h2 @click="reqshow = !reqshow; courseshow=false; desshow=false">Requirements/supplies</h2>
+                <p v-show="reqshow">hello world</p>
+            </div>
+            <div>
+                <h2 @click="courseshow = !courseshow; desshow=false;reqshow=false ">Course Overview</h2>
+                <p v-show="courseshow">HELLOWORLD</p>
+            </div>
+            
+        </div>
+    </ModalDef>
+    <div class="bg">
+        <div>
+            <h1>Software Technology</h1>
+            <div class="chart">
+                <div class="row top"> <p class="col prog">Program #</p><p class="col prog">Program Name</p><p class="col hours">Hours</p> <p class="col mod">Modules</p> <p class="col pre">Prerequisites</p></div>
+                <div v-for="(item, index) in items" :key="index" class="row">
+                    <p class="col">{{item.name}}</p> 
+                    <p @click="toggleModal(); modalcontent(item)" class="col">{{item.title}}</p>
+                    <p class="col">{{item.hours}}</p>
+                    <p class="col">{{item.modules}}</p>
+                    <p class="col">{{item.prereq}}</p>
+                </div>
+                <div class="row bottom"> <p class="col "></p><p class="col "></p><p class="col hour">960.00</p> <p class="col "></p> <p class="col "></p></div>
+            </div>     
+        </div>       
+    </div>
+    
+
+</template>
+<script>
+import Modal from '../components/ModalDef.vue'
+import {ref} from 'vue'
+import items from '../components/ClassData.js'
+export default {
+    name:"CourseOverview",
+    components:{
+        ModalDef: Modal,
+    },
+    setup(){
+        const modalActive = ref(false);
+        const toggleModal = () => {
+            modalActive.value = !modalActive.value;
+        }
+        return {modalActive, toggleModal,};
+    },
+    methods:{
+        modalcontent(item){
+            this.header = item.title;
+            this.description=item.desc;
+        }
+    },
+    data(){
+        return{
+            items: items,
+            header: "",
+            description: "",
+            desshow: true,
+            reqshow: false,
+            courseshow: false,
+        }
+    },
+}
+</script>
+<style scoped>
+ .row{
+   display: flex;
+   width: 75%;
+   margin: 0% auto;
+ }
+ .col{
+   flex: 50%;
+   border: 1px solid black;
+ }
+ h1{
+     color: white;
+     text-decoration: underline;
+     background-color: rgb(61, 61, 61);
+     margin: 0% auto;
+     padding: 2%;
+ }
+ p{
+     margin: 0% auto;
+     padding: 1% 0%;
+ }
+ .chart{
+     margin: 3% auto 3%;
+ }
+ .top{
+     background-color: red;
+     text-decoration: underline;
+     font-size: 150%;
+ } 
+ .bottom{
+     background-color: rgb(61, 61, 61);
+     text-decoration: none;
+     font-size: 150%;
+     color: white;
+     margin-top: 0;
+ } 
+ .dark-1{
+     background-color: rgb(36, 36, 36);
+ }
+ .light{
+     background-color: rgb(180, 180, 180);
+ }
+.hour{
+    background-color: rgb(123, 123, 123);
+}
+.dark{
+    background-color: rgb(140, 140, 140);
+}
+.modal-content{
+    display: flex;
+    flex-direction: column;  
+}
+</style>
