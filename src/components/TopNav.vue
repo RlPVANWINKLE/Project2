@@ -7,6 +7,7 @@
             <router-link to="/courses">Course Overview</router-link> 
             <router-link to="/instructors">Your Instructors</router-link> 
             <router-link to="/contact">Contact us</router-link> 
+            <router-link to="/graduation">Post graduation</router-link>
         </nav>
         
 

@@ -129,7 +129,7 @@ export default {
 }
 h2{
     margin: 0% auto 0%;
-    color: white;
+    color: black;
     background-color: rgb(180, 180, 180);
     padding: 3%;
     width: 27%;
@@ -151,7 +151,7 @@ h2:active{
     
 }
 .con_col p{
-    color: white;
+    color: black;
     width: 80%;
     font-size: 25px;
 }

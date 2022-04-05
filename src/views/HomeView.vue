@@ -26,13 +26,12 @@ export default {
 <style scoped>
 
 p{
-  width: 80%;
+
   font-size: 200%;
-  margin: 1% auto;
+  margin: 0%;
   color: black;
   background-color: white;
-  padding: 1%;
-  height: 50%;
+  padding: 3%
 }
 h1{
   color: white;

@@ -21,7 +21,12 @@ const routes = [
     path: '/instructors',
     name: 'instructors',
     component: () => import(/* webpackChunkName: "about" */ '../views/InstructorView.vue')
-  },  
+  }, 
+  {
+    path: '/graduation',
+    name: ' graduation',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PostGraduation.vue')
+  } 
 ]
 
 const router = createRouter({
