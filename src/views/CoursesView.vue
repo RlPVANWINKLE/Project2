@@ -22,11 +22,11 @@
             <div class="chart">
                 <div class="row top"> <p class="col prog">Program #</p><p class="col prog">Program Name</p><p class="col hours">Hours</p> <p class="col mod">Modules</p> <p class="col pre">Prerequisites</p></div>
                 <div v-for="(item, index) in items" :key="index" class="row">
-                    <p class="col">{{item.name}}</p> 
-                    <p @click="toggleModal(); modalcontent(item)" class="col">{{item.title}}</p>
-                    <p class="col">{{item.hours}}</p>
-                    <p class="col">{{item.modules}}</p>
-                    <p class="col">{{item.prereq}}</p>
+                    <p class="col light">{{item.name}}</p> 
+                    <p @click="toggleModal(); modalcontent(item)" class="col beige">{{item.title}}</p>
+                    <p class="col light">{{item.hours}}</p>
+                    <p class="col dark">{{item.modules}}</p>
+                    <p class="col light">{{item.prereq}}</p>
                 </div>
                 <div class="row bottom"> <p class="col "></p><p class="col "></p><p class="col hour">960.00</p> <p class="col "></p> <p class="col "></p></div>
             </div>     
@@ -89,6 +89,7 @@ export default {
  p{
      margin: 0% auto;
      padding: 1% 0%;
+     color: black;
  }
  .chart{
      margin: 3% auto 3%;
@@ -109,7 +110,7 @@ export default {
      background-color: rgb(36, 36, 36);
  }
  .light{
-     background-color: rgb(180, 180, 180);
+     background-color: rgb(218, 218, 218);
  }
 .hour{
     background-color: rgb(123, 123, 123);
@@ -117,39 +118,63 @@ export default {
 .dark{
     background-color: rgb(140, 140, 140);
 }
-.modal-content{
+/* .modal-content{
     display: flex;
     flex-direction: column;  
-}
+} */
 .h2_row{
     display: flex;
     width: 100%;
     margin: 0% auto; 
 }
 h2{
-    margin: 2% auto 0%;
+    margin: 0% auto 0%;
     color: white;
-    background-color: rgb(123, 123, 123);
+    background-color: rgb(180, 180, 180);
     padding: 3%;
-    border-bottom: 2px solid black;
+    width: 27%;
 }
 h2:hover{
     cursor: pointer;
     text-decoration: underline;
 }
+h2:active{
+    background-color: white;
+    color: black;
+}
 .con_col{
     display: flex;
-    background-color: rgb(123, 123, 123);
-    margin: 2% auto;
+    background-color: rgb(180, 180, 180);
+    margin: 0% auto;
     padding: 3%;
+    border: 1px solid black;
     
 }
 .con_col p{
     color: white;
     width: 80%;
+    font-size: 25px;
 }
-.moheader{
+h1.moheader{
     background-color: none;
+    margin: 2% 10%;
+}
+.beige{
+    background-color: beige;
+}
+.beige:hover{
+    background-color: rgb(123, 123, 123);
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+.all{
+    border: 5px solid black;
+    
+}
+.bg{
+    background-color: white;
+    height: 90vh;
 }
 
 </style>

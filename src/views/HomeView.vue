@@ -34,15 +34,11 @@ p{
   padding: 1%;
   height: 50%;
 }
-.about{
-  width: 100%;
-  height: 60%;
-}
 h1{
   color: white;
   text-decoration: underline;
   background-color: rgb(61, 61, 61);
-  margin: 0% auto 0%;
+  margin: 0% auto;
   padding: 2%;
 }
 

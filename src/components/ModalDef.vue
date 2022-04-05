@@ -36,19 +36,32 @@ setup(props, { emit }) {
     position: fixed;
     top: 25%;
     left: 25%;
+    border: 10px solid black;
 }
 .modal-inner{
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(123, 123, 123);
     
 }
 .icon{
     position: absolute;
-    top: 1%;
+    top: -1%;
     right: 1%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 90%;
+    padding: 1%;
 
+}
+.icon:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
 }
 .modal-animation-enter-active,
 .modal-animation-leave-active{
