@@ -10,8 +10,8 @@
             </div>
             <div class="con_col">
                 <p v-show="desshow">{{description}}</p>                
-                <p v-show="reqshow">hello world</p>
-                <p v-show="courseshow">HELLOWORLD</p>
+                <p v-show="reqshow">{{requirments}}</p>
+                <p v-show="courseshow">{{overview}}</p>
             </div>
             
         </div>
@@ -55,6 +55,8 @@ export default {
         modalcontent(item){
             this.header = item.title;
             this.description=item.desc;
+            this.requirments=item.req;
+            this.overview=item.ov;
         }
     },
     data(){
@@ -62,6 +64,8 @@ export default {
             items: items,
             header: "",
             description: "",
+            requirments: "",
+            overview: "",
             desshow: true,
             reqshow: false,
             courseshow: false,
@@ -83,16 +87,16 @@ export default {
      color: white;
      text-decoration: underline;
      background-color: rgb(61, 61, 61);
-     margin: 0% auto;
+     margin: 0%;
      padding: 2%;
  }
  p{
-     margin: 0% auto;
+     margin: 0%;
      padding: 1% 0%;
      color: black;
  }
  .chart{
-     margin: 3% auto 3%;
+     margin: 5% auto;
  }
  .top{
      background-color: red;
@@ -104,7 +108,6 @@ export default {
      text-decoration: none;
      font-size: 150%;
      color: white;
-     margin-top: 0;
  } 
  .dark-1{
      background-color: rgb(36, 36, 36);
@@ -125,12 +128,12 @@ export default {
 .h2_row{
     display: flex;
     width: 100%;
-    margin: 0% auto; 
+    margin: 0%; 
 }
 h2{
     margin: 0% auto 0%;
-    color: black;
-    background-color: rgb(180, 180, 180);
+    color: white;
+    background-color: rgb(150, 0, 0);
     padding: 3%;
     width: 27%;
 }
@@ -144,8 +147,8 @@ h2:active{
 }
 .con_col{
     display: flex;
-    background-color: rgb(180, 180, 180);
-    margin: 0% auto;
+    background-color: white;
+    margin: 0%;
     padding: 3%;
     border: 1px solid black;
     
@@ -174,7 +177,7 @@ h1.moheader{
 }
 .bg{
     background-color: white;
-    height: 90vh;
+    height: 100vh;
 }
 
 </style>

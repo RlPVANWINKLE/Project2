@@ -1,57 +1,63 @@
 <template>
   <div class="container">
-    <div class="row tops">
-      <div class="col item">
-        <div class="row">
-          <p>Full Name:</p> 
-          <input type="text" name="name" id="" placeholder="John Doe">
-        </div>
-      </div>
-      <div class="col item">
-        <div class="row">
-            <p>Phone Number:</p> 
-            <input type="text" name="name" id="" placeholder="(999)888-7654">
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col ">
-        <textarea name="" id="" cols="72" rows="15" placeholder="Whats your question?" class="tb"></textarea>
-      </div>
-    </div>
-  </div>
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="subject">Tell us what you need</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+</div>
 </template>
 
  <style scoped>
- .row{
-    display: flex;
- }
- .col{
-   flex: 50%;
- }
- .container{
-   width: 50%;
-   margin: 2% auto;
-   background-color: black;
-   padding: 2.5%;
- }
+ input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size: 15px
+}
 
- input{
-   height:3vh;
-   font-size: 120%;
-   margin-top: auto;
-   margin-bottom: auto;
-   margin-left: 2%;
- }
- textarea{
-    width: 100%;
-   margin: 2% auto;
- }
- p{
-   color: white;
- }
- .tops{
-   margin-left: 5%;
- }
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #c8c8c8;
+  padding: 20px;
+  width: 70%;
+  margin: 5% auto
+}
+label{
+  float: left;
+  font-weight: bolder;
+  font-size: 20px;
+}
 
  </style>

@@ -10,6 +10,7 @@ img{
     width: 100%;
     height: 60vh;
     opacity: 70%;
-    margin: 0% auto 2%;
+    margin: 0% auto 0%;
+    
 }
 </style>

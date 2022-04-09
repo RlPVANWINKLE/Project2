@@ -6,7 +6,7 @@
                   <p class="icon" @click="close">X</p>
                   <!-- modal content -->
                   <slot />
-                  <button @click="close">Close</button>
+                  <!-- <button @click="close">Close</button> -->
               </div>
           </transition>
       </div>
@@ -31,11 +31,11 @@ setup(props, { emit }) {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
-    width: 50%;
+    height: 72%;
+    width: 60%;
     position: fixed;
-    top: 25%;
-    left: 25%;
+    top: 15%;
+    left: 20%;
     border: 10px solid black;
 }
 .modal-inner{
