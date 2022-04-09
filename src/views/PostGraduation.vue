@@ -9,11 +9,12 @@
         <div v-for="(job, index) in jobs" :key="index" class="container">
             <div v-show="type == job.type" class="thumbnail">
                 <h1 class="title">{{job.title}}</h1>
-                <p v-show="desc" class="desc" >{{job.view}}</p>
+                <p v-show="desc" class="desc" id="tab">{{job.view}}</p>
                 <div class="row-2">
-                    <p class="tab" @click="descr(index)" >Description</p>
-                    <p class="tab" @click="req(index)">Requirements</p>
-                    <p class="tab" @click="duty(index)">Duties</p>
+                    <p class="tab" id="des" @click="descr(index)" >Description</p>
+                    <p class="tab" id="requi" @click="req(index)">Requirements</p>
+                    <p class="tab" id="dutes" @click="duty(index)">Duties</p>
+                    <p class="tab" id="sal" @click="salaries(index)">Salary</p>
                 </div>                 
                 
             </div>           
@@ -43,10 +44,13 @@ export default {
         },
         descr( index){
             this.jobs[index].view = jobs[index].description;
-            console.log(jobs[index].description)
         },
         duty(index){
             this.jobs[index].view = jobs[index].duties;
+        },
+        salaries(index){
+            this.jobs[index].view = jobs[index].salary;
+            
         }
     }
 }
@@ -54,12 +58,13 @@ export default {
 <style scoped>
 .thumbnail{
     width: 100%;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 .container{
     width: 45%;
     margin: 2% auto;
     height: 50%;
+    
     
 }
 .row{
@@ -75,6 +80,7 @@ export default {
     display: flex;
     background-color:rgb(150, 0, 0);
     margin:0% auto;
+     border-top: 3px solid black;
 }
 .row-2:hover{
     cursor: pointer;
@@ -86,7 +92,7 @@ export default {
 }
 .tab{
     margin: 0% auto;
-    padding: 2% 10%;
+    padding: 2% 8%;
     color: white;
 }
 .tab:hover{

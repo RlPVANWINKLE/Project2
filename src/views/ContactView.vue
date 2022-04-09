@@ -48,11 +48,11 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
   background-color: #c8c8c8;
   padding: 20px;
   width: 70%;
-  margin: 5% auto
+  margin: 5% auto;
+  border: 3px solid black;
 }
 label{
   float: left;

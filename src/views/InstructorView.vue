@@ -76,7 +76,7 @@ export default{
      width: 50%;
      height: auto;
      margin: 2% auto;
-     border: 3px solid black;
+     border: 3px solid white;
      transition: width .4s;
  }
  .info{

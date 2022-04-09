@@ -99,16 +99,23 @@ export default {
      margin: 5% auto;
  }
  .top{
-     background-color: red;
+     background-color: rgb(150, 0, 0);
      text-decoration: underline;
      font-size: 150%;
+     color: white;
  } 
+ .top p{
+     color: white;
+ }
  .bottom{
      background-color: rgb(61, 61, 61);
      text-decoration: none;
      font-size: 150%;
      color: white;
  } 
+ .bottom p{
+     color: white;
+ }
  .dark-1{
      background-color: rgb(36, 36, 36);
  }
@@ -120,6 +127,7 @@ export default {
 }
 .dark{
     background-color: rgb(140, 140, 140);
+    color: white;
 }
 /* .modal-content{
     display: flex;
