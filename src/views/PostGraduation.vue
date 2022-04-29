@@ -78,7 +78,7 @@ export default {
 }
 .row-2{
     display: flex;
-    background-color:rgb(150, 0, 0);
+    background-color:red;
     margin:0% auto;
      border-top: 3px solid black;
 }

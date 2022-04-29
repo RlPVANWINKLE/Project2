@@ -17,28 +17,7 @@
 <style scoped>
 div{
     background-color: black;
-
 }
-img{
-    margin: 2% auto;
-    background-color: chartreuse;
-}
-nav {
-  margin: 0%;
-  padding: 1%;
-  background-color: rgba(255, 0, 0, 0.641);
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-}
-
-nav a {
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  padding: 1.1% 5%;
-  margin: 0% .50%;
-}
-
 nav a.router-link-exact-active {
   background-color: white;
   color: black;
@@ -50,5 +29,70 @@ nav a.router-link-exact-active {
    color: black;
    border-left: 3px solid black;
   border-right: 3px solid black;
+ }
+ @media screen and (min-width:900px) {
+  nav {
+    margin: 0%;
+    padding: 1%;
+    background-color: red;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  nav a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 1.2% 3%;
+    margin: 0% 1%;
+    
+  }
+  img{
+    margin: 2% auto;
+    background-color: chartreuse;
+}
+ }
+ @media screen and (max-width:900px) {
+  nav {
+    margin: 0%;
+    padding: 1%;
+    background-color: red;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  nav a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 01.5% 1%;
+    margin: 0% 1%;
+    font-size: 12px;
+    
+  }
+  img{
+    margin: 2% auto;
+    background-color: chartreuse;
+}
+ }
+ @media screen and (max-width:600px) {
+  nav {
+    margin: 0%;
+    padding: 1%;
+    background-color: red;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  nav a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 2.0% 1%;
+    margin: 0% 1%;
+    font-size: 10px;
+    
+  }
+  img{
+    margin: 2% auto;
+    background-color: chartreuse;
+}
  }
 </style>

@@ -20,13 +20,13 @@
         <div>
             <h1>Software Technology</h1>
             <div class="chart">
-                <div class="row top"> <p class="col prog">Program #</p><p class="col prog">Program Name</p><p class="col hours">Hours</p> <p class="col mod">Modules</p> <p class="col pre">Prerequisites</p></div>
+                <div class="row top"> <p class="col prog desktop">Program #</p><p class="col prog">Program Name</p><p class="col hours">Hours</p> <p class="col mod desktop">Modules</p> <p class="col pre">Prerequisites</p></div>
                 <div v-for="(item, index) in items" :key="index" class="row">
-                    <p class="col light">{{item.name}}</p> 
+                    <p class="col light desktop">{{item.name}}</p> 
                     <p @click="toggleModal(); modalcontent(item)" class="col beige">{{item.title}}</p>
-                    <p class="col light">{{item.hours}}</p>
-                    <p class="col dark">{{item.modules}}</p>
-                    <p class="col light">{{item.prereq}}</p>
+                    <p class="col light ">{{item.hours}}</p>
+                    <p class="col dark desktop">{{item.modules}}</p>
+                    <p class="col light ">{{item.prereq}}</p>
                 </div>
                 <div class="row bottom"> <p class="col "></p><p class="col "></p><p class="col hour">960.00</p> <p class="col "></p> <p class="col "></p></div>
             </div>     
@@ -96,10 +96,10 @@ export default {
      color: black;
  }
  .chart{
-     margin: 5% auto;
+     margin: 3% auto 3%;
  }
  .top{
-     background-color: rgb(150, 0, 0);
+     background-color: red;
      text-decoration: underline;
      font-size: 150%;
      color: white;
@@ -129,10 +129,6 @@ export default {
     background-color: rgb(140, 140, 140);
     color: white;
 }
-/* .modal-content{
-    display: flex;
-    flex-direction: column;  
-} */
 .h2_row{
     display: flex;
     width: 100%;
@@ -141,7 +137,7 @@ export default {
 h2{
     margin: 0% auto 0%;
     color: white;
-    background-color: rgb(150, 0, 0);
+    background-color: red;
     padding: 3%;
     width: 27%;
 }
@@ -187,5 +183,9 @@ h1.moheader{
     background-color: white;
     height: 100vh;
 }
-
+@media screen and (max-width: 900px) {
+    .desktop{
+        display: none;
+    }
+}
 </style>

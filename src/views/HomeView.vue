@@ -35,14 +35,14 @@ p{
   color: black;
   background-color: white;
   padding: 3%;
-  width: 75%;
+  width: 100%;
   border: 3px solid black;
   border-top: 0;
 }
 h1{
   color: white;
   text-decoration: underline;
-  background-color: rgb(150, 0, 0);
+  background-color: red;
   margin: 0% auto 0%;
   padding: 2%;
   border: 3px solid black;
