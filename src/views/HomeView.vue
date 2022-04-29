@@ -35,7 +35,6 @@ p{
   color: black;
   background-color: white;
   padding: 3%;
-  width: 100%;
   border: 3px solid black;
   border-top: 0;
 }
