@@ -1,12 +1,12 @@
 const jobs = [
     {
-        description:"Crown Equipment Corporation is a leading innovator in world-class forklift and material handling equipment and technology. As one of the world’s largest lift truck manufacturers, we are committed to providing the customer with the safest, most efficient and ergonomic lift truck possible to lower their total cost of ownership.",
+        description:"Crown Equipment Corporation is a leading innovator in world-class forklift and material handling equipment and technology. As one of the world’s largest lift truck manufacturers, we are committed to providing the customer with the safest, most efficient, and ergonomic lift truck possible to lower their total cost of ownership.",
         view:"Crown Equipment Corporation is a leading innovator in world-class forklift and material handling equipment and technology. As one of the world’s largest lift truck manufacturers, we are committed to providing the customer with the safest, most efficient and ergonomic lift truck possible to lower their total cost of ownership.",
         title:"Software Developer 1",
         salary: '$50,000',
         type:'Full Time',
-        requirements: 'Understanding of Object Oriented programing principles, why they work, and how to best use them. A high school diploma or equivalent is required. Salary/level will commensurate with experience.',
-        duties: 'Code, modify, and debug, web-based applications in Java using additional technologies including Spring, Angular, HTML, JavaScript, and CSS. Perform code review of team members to learn new techniques while providing code quality review. Assist in analysis of interacting systems to ensure changes made to one system will not impact other systems. Work closely with the Business Analyst to ensure proper documentation of equirements. Prepare technical specifications and other system and programming documentation in accordance with internal standards. Provide knowledge transfer to Support and Operations personnel related to changes to systems. Work with Quality Analysts to ensure changes are thoroughly tested before release. Write unit and integration tests for new code. Assist with the diagnosis of problematic applications and system testing. Stay informed of advances and pertinent changes in hardware and software technologies.',
+        requirements: 'Understanding of Object-Oriented programing principles, why they work, and how to best use them. A high school diploma or equivalent is required. Salary/level will commensurate with experience.',
+        duties: 'Code, modify, and debug, web-based applications in Java using additional technologies including Spring, Angular, HTML, JavaScript, and CSS. Perform code review of team members to learn new techniques while providing code quality review. Assist in analysis of interacting systems to ensure changes made to one system will not impact other systems. Work closely with the Business Analyst to ensure proper documentation of requirements. Prepare technical specifications and other system and programming documentation in accordance with internal standards. Provide knowledge transfer to Support and Operations personnel related to changes to systems. Work with Quality Analysts to ensure changes are thoroughly tested before release. Write unit and integration tests for new code. Assist with the diagnosis of problematic applications and system testing. Stay informed of advances and pertinent changes in hardware and software technologies.',
         
 
     },
@@ -17,7 +17,7 @@ const jobs = [
         salary:'$40,000 - $51,000',
         type:'Full Time',
         requirements:'High school or equivalent (Preferred)',
-        duties:'Strong customer service skills. Candidate should have a passion for learning and have a growth mindset. Must have the ability to do basic internet activities like downloading and creating accounts and managing passwords. Must have an HS diploma or equivalency diploma. Must be authorized to work in the US. The desire to grow and learn',
+        duties:'Strong customer service skills. Candidate should have a passion for learning and have a growth mindset. Must have the ability to do basic internet activities like downloading and creating accounts and managing passwords. Must have an HS diploma or equivalency diploma. Must be authorized to work in the US. The desire to grow and learn.',
         
     },
     {
@@ -26,8 +26,8 @@ const jobs = [
         title:"Entry Level Software Engineer",
         salary: '$52,000 - $70,000',
         type:"Full Time",
-        requirements: 'BA/BS Required. Authorized to work in the U.S. <br /> Must be open to relocation Candidates must be able to work on SkillStorms W2 not a C2C position. EOE, including disability/vets. Strong technical mind-set, including problem solving, trouble shooting, logical reasoning Outstanding verbal and written communication skills Must be able to code in an OOP language', 
-        duties: 'BA/BS Required Authorized to work in the U.S. Must be open to relocation Candidates must be able to work on SkillStorms W2 not a C2C position. EOE, including disability/vets. Strong technical mind-set, including problem solving, trouble shooting, logical reasoning Outstanding verbal and written communication skills Must be able to code in an OOP language',
+        requirements: 'BA/BS Required. Authorized to work in the U.S. <br /> Must be open to relocation Candidates must be able to work on SkillStorms W2 not a C2C position. EOE, including disability/vets. Strong technical mind-set, including problem solving, trouble shooting, logical reasoning Outstanding verbal and written communication skills Must be able to code in an OOP language.', 
+        duties: 'BA/BS Required Authorized to work in the U.S. Must be open to relocation Candidates must be able to work on SkillStorms W2 not a C2C position. EOE, including disability/vets. Strong technical mind-set, including problem solving, trouble shooting, logical reasoning Outstanding verbal and written communication skills Must be able to code in an OOP language.',
         
 
     },

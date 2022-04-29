@@ -19,7 +19,7 @@
             <img src="../../images/hardy_nathan.jpg" alt="">
             <div class="info">
                 <h1>Nate Hardy</h1>
-                <p>Nate is our Day instructor. Nate was at one point a student within the Software development program at Ogden Weber Tech college. He is Very patient. Nate is knowledgable with the concepts and details of programming. Nate will always get to the point and make sure you understand what is happening before allowing you to continue on.</p>
+                <p>Nate is our Day instructor. Nate was at one point a student within the Software development program at Ogden Weber Tech college. He is Very patient. Nate is knowledgeable with the concepts and details of programming. Nate will always get to the point and make sure you understand what is happening before allowing you to continue.</p>
                 <div class="contact">
                     <p>NATE HARDY:</p>
                     <p>Email: Nathan.Hardy@otech.edu</p>
@@ -31,7 +31,7 @@
             <img src="../../images/shawn.jpg" alt="">
             <div class="info">
                 <h1>Shawn Porter</h1>
-                <p>Shawn is our night instructor. Shawn is very patient and open about ways to improve your code. He is very knowledgable in coding. Shawn is always willing to give a quick refresher or lesson in order to shopw you how to do sonmething. He will always be there to help you out.</p>
+                <p>Shawn is our night instructor. Shawn is very patient and open about ways to improve your code. He is very knowledgeable in coding. Shawn is always willing to give a quick refresher or lesson in order to shopw you how to do sonmething. He will always be there to help you out.</p>
                 <div class="contact">
                     <p>Shawn Porter:</p>
                     <p>Email: Shawn.Porter@otech.edu</p>
